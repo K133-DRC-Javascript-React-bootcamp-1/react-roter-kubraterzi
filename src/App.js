@@ -1,16 +1,19 @@
 import React from "react";
+import Counter from "./components/reactRedux/Counter";
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import Home from "./components/Home";
-import About from "./components/About";
-import Users from "./components/Users";
-import User from "./components/User";
+// import Home from "./components/reactRouter/Home";
+// import About from "./components/reactRouter/About";
+// import Users from "./components/reactRouter/Users";
+// import User from "./components/reactRouter/User";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+
+      {/* REACT-ROUTER */}
+      {/* <Router>
         <div>
           <ul>
             <li>
@@ -24,7 +27,6 @@ function App() {
             </li>
           </ul>
           <hr />
-          {/* "Switch" replaced by routes "Routes" and updated the Route declaration in React Dom Router V6 */}
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="about" element={<About />} />
@@ -33,7 +35,9 @@ function App() {
             </Route>
           </Routes>
         </div>
-      </Router>
+      </Router> */}
+
+      <Counter />
     </div>
   );
 }
